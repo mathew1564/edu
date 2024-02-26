@@ -1,0 +1,39 @@
+@import '../../../setting';
+
+.container {
+    .header {
+        position: fixed ;
+        top: 0;
+        background-color: $bg_dasboard;
+        width: 100%;
+    }
+    .logo {
+        width: 7rem;
+     
+    }
+    .border {
+        border: 1px solid;
+    }
+    .margin-logo {
+        margin-top: 8rem;
+    }
+    .img-background {
+        width: 100%;
+    }
+    .password {
+        position: relative;
+        .pass-eye {
+            position: absolute;
+            right:34px;
+            top: 45px;
+        }
+    }
+   
+}
+.footer {
+    position: fixed;
+    bottom: 0;  
+    height: 2rem    ;
+    width: 100vw!important;
+    background-color: #3b71ca;
+}

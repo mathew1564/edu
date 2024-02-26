@@ -1,0 +1,84 @@
+.progressParent {
+    .progressParent-header {
+        background-color: #fff;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    .progressParent-table {
+        overflow: hidden;
+        background-color: #fff;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 10px;
+        .table-progress {
+            margin-bottom: 85px;
+        }
+        .progress-module {
+            font-size: smaller;
+        }
+        
+        .subject-progress {
+            background-color: #F0FFF3;
+            border: 1px solid #03822E;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .exam-progress {
+            background-color: #FFF0F7;
+            border: 1px solid #FF1D1D;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .file-body {
+            font-size: x-small;
+            color: #0077FF;
+            font-weight: bold;
+            border-radius: 20px;
+            border: 1px solid #0077FF;
+            text-align: center;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .body-status-schedule {
+            background-color: #f7e1e1;
+            border-radius: 10px;
+            border: 1px solid red;
+            display: inline;
+            padding: 3px;
+
+
+        }
+        .body-status{
+            background-color: #F0FFF3;
+            border: 2px solid #03822E;
+            border-radius: 10px;
+            display: inline;
+            padding: 3px;
+        }
+        .item-hidden {
+             @media (max-width:1000px) {
+                display: none;
+             }
+        }
+        .row-hidden {
+            display: none;
+            position: relative;
+            
+            .hover-hidden {
+              
+                position: absolute;
+                width: 100vw;
+            }
+        }
+        
+       @media (max-width:1000px) {
+        .row-show:hover + .row-hidden {
+            display: block;
+        }
+       }
+       .border-none {
+        border: none!important;
+       }
+    }
+}

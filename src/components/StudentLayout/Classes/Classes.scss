@@ -1,0 +1,48 @@
+@import "../../../../setting";
+.classe {
+  .classe-info {
+    flex-direction: column;
+    .classes-infor-list-form {
+      height: fit-content;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      p {
+        color: $color_hover;
+        font-weight: 500;
+      }
+      .btn-roll-call {
+        background-color: #d93d66;
+        color: #fff;
+      }
+    }
+    .classe-info-choose-sub {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      gap: 1rem;
+      .form-select-sub {
+        font-size: 15px;
+        padding: 5px;
+      }
+    }
+  }
+  .classe-table {
+    td{
+        font-size: 14px;
+    }
+    .content_colmark{
+        .sub-title{
+            color:#3E73BD ;
+        }
+    }
+    .btn-sub {
+      background-color: #f0fff3;
+      border-color: #03822e;
+      padding: 5px;
+      color: #03822e;
+      
+    }
+
+  }
+}

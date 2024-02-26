@@ -1,0 +1,26 @@
+* {}
+
+.img-feedback {
+    width: 100%;
+}
+
+.card-feedback {
+    width: 25rem !important;
+
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px !important;
+}
+
+.col-feedback {
+    padding: 0px !important;
+
+    .form-control {
+        background-color: #F7F7F7 !important;
+        border: none;
+    }
+}
+
+// .card-feeback-body {
+//     padding-right: 40px!important;
+//     padding-left: 40px!important;
+// }

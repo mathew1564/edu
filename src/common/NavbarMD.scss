@@ -1,0 +1,232 @@
+@import "../../setting.scss";
+.nav-bar-md {
+  min-height: 100vh;
+  background-color: #ffffff;
+  width: 38%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  height: 300px;
+  
+
+}
+.nav-bar-md::-webkit-scrollbar {
+    width: 0;
+  }
+.out-side {
+  min-height: 100vh;
+  background-color: rgba(62, 67, 70, 0.492);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.nav-bar-md {
+  position: absolute;
+  top:0;
+  animation: runText .25s linear;
+  white-space: nowrap;
+}
+
+@keyframes runText {
+  0% { left: -100px; opacity: .2; }
+  100% { left: 0; opacity: 1; }
+}
+
+
+@media (max-width: 600px) {
+  .nav-bar-md {
+    width: 50%;
+  }
+  .out-side {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .nav-bar-md {
+    width: 60%;
+  }
+  .out-side {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav-bar-md {
+    width: 60%;
+  }
+  .out-side {
+    width: 100%;
+  }
+}
+@media (max-width: 280px) {
+  .nav-bar-md {
+    width: 70%;
+  }
+  .out-side {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .nav-bar-md {
+    width: 70%;
+  }
+  .out-side {
+    width: 100%;
+  }
+}
+
+.list-menu {
+  overflow-y: scroll;
+  height: 560px;
+}
+.list-menu::-webkit-scrollbar{
+  width: 0;
+}
+.list-menu li {
+  list-style: none;
+  padding: 0 10px 0 5px;
+  margin-left: -10px;
+}
+.list-menu li:hover {
+  background-color: #EEF2FF;
+  border-radius: 10px;
+}
+.list-menu li a {
+  color: #0e0e0e;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.list-menu li a:hover{
+  color:#6468EE ;
+}
+.active-nav{
+  background-color: #EEF2FF;
+  border-radius: 10px;
+}
+.active-nav a{
+    color: #6468EE !important;
+
+}
+.active-nav .icon-menu{
+    color: #6468EE !important;
+
+}
+.list-menu li a .icon-menu {
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 1.5rem;
+  border-radius: 4px;
+  color: gray;
+}
+.list-menu li {
+  display: flex;
+  /* justify-content: space-around; */
+  line-height: 3rem;
+}
+.list-menu .dropdown {
+  justify-content: space-between;
+}
+.drop-down-list {
+  border-left: 1px solid rgb(211, 211, 211);
+}
+.drop-down-list li {
+  margin-left: 5px;
+}
+.drop-down-list li a {
+  font-size: 1rem;
+}
+.text-logo{
+  font-family: $font_text;
+  font-size: 24px;
+  font-weight: 800;
+  color: #2870d4;
+}
+.nav-bar-logo{
+  margin-left: 10px;
+  display: flex;
+  align-items: end;
+}
+.nav-bar-md{
+  padding: 0;
+  ul {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    a {
+      text-decoration: none;
+      color: $color_sidebar;
+      font-weight: 500;
+      font-family: $font_text;
+      &:hover {
+        color: $color_hover;
+        .item_icon_sidebar {
+          color: $color_hover;
+          opacity: 1;
+        }
+      }
+      .left-bar-active-item {
+        color: $color_hover;
+        opacity: 1;
+        border-left: 4px solid #1b91ff;
+        background-color: $bg_dasboard;
+      }
+      li {
+        margin-left: 0px;
+        width: 100%;
+        border-left: 0px solid #1b91ff;
+        list-style: none;
+
+        .left-bar-item {
+          padding-inline: 20px 0;
+          padding-block: 5px;
+          .item_icon_sidebar {
+            opacity: 0.7;
+            font-size: 24px;
+          }
+        }
+        &:hover {
+          color: $color_hover;
+          .item_icon_sidebar {
+            color: $color_hover !important;
+            opacity: 1;
+          }
+
+          background-color: $bg_dasboard;
+        }
+      }
+    }
+  }
+  .left-bar-logout {
+    margin-top: 30px;
+    padding: 0 20px;
+    color: #e55858;
+    cursor: pointer;
+
+    .left-bar-icon-logout {
+      font-size: 32px;
+      font-weight: 800;
+    }
+    span {
+      font-family: $font_text;
+      font-weight: 600;
+    }
+  }
+
+  .left-bar-access {
+    padding: 0 20px;
+    margin-top: 20px;
+    .left-bar-text-access {
+      color: $color_sidebar;
+    }
+    .left-bar-subtext-access {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      font-family: $font_text;
+    }
+  }
+}

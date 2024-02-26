@@ -1,0 +1,49 @@
+.setting-options-check {
+
+    background-color: #EEEEEE;
+
+}
+
+.setting-options {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-radius: 5px;
+
+    .setting-icon {
+        color: #FF5818;
+    }
+}
+.item-title {
+    border-bottom: 1px solid #ccc;
+}
+.setting-item {
+    border-bottom: 1px solid #ccc;
+    .setting-button {
+        border-radius: 20px;
+      
+        width: 78px;
+        float: right;
+    }
+    .setting-upload {
+        width:100px;
+        float: right;
+ 
+    }
+    .switch-setting  {
+       
+    
+    .form-check-input:checked  {
+        background-color:#FF5818;
+       
+        border-color: #FF5818!important;
+    }
+    .form-check-input {
+        border: #ccc!important;
+    }
+    }
+    .input-setting {
+        width: 70%!important;
+    }
+}

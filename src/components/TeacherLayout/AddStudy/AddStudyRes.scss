@@ -1,0 +1,136 @@
+@import '../../../../setting';
+
+.addresources_master {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    .document-title {
+        font-weight: bold;
+        font-size: 18px;
+
+    }
+
+    .subject-drop {
+        width: 91px;
+        height: 29px;
+        font-size: 16px;
+        padding-top: 2px;
+        font-weight: 500;
+        padding-bottom: 2px;
+        background-color: rgb(199, 196, 196);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .upload-span {
+        background-color: rgb(199, 196, 196);
+        cursor: pointer;
+        width: 120px;
+        margin-left: 10px;
+        border-radius: 10px;
+        height: 28px;
+        color: white;
+
+        &:hover {
+            background-color: $color_press;
+        }
+
+        .upload-title {
+            display: flex;
+            justify-content: center;
+            margin-top:2px;
+        }
+    }
+
+    .span-add {
+        background-color: $color_press;
+        width: 60px;
+        margin-right: 10px;
+        border-radius: 10px;
+        height: 28px;
+        cursor: pointer;
+        color: white;
+
+        .add-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2px;
+        }
+    }
+    
+    .table_div {
+        margin-top: 30px;
+
+            
+        @media screen and (min-width: 280px) and (max-width: 567px) {
+            width: 367px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .filter-icon {
+            cursor: pointer;
+        }
+
+        .span-add-edit {
+            display: flex;
+            justify-content: end;
+            color: white;
+            cursor: pointer;
+            
+
+
+            .span-edit {
+                background-color: #E55858;
+                border-radius: 10px;
+                width: 60px;
+                .edit-title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        .content_col1 {
+            display: flex;
+            font-size: 13px;
+
+            .cardprogess {
+                // height: 30px;
+                background-color: rgb(228, 255, 187);
+                
+            }
+
+            .propresssubject {
+                text-align: center;
+                margin-top: 2px;
+            }
+
+            .progresscontent1 {
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .progressdetail {
+                    color: $color_press;
+                }
+                .progresstime {
+                    color: gray;
+                    font-size: 10px;
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 1036px) and (min-width: 250px) {
+            .content_col1 {
+                display: block;
+                font-size: 12px;
+            }
+        }
+        
+    }
+   
+}

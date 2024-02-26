@@ -1,0 +1,90 @@
+.viewMark {
+    .container-headerViewMark {
+        display: flex;
+        justify-content: center;
+
+        .header-viewMark {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #fff;
+            border-radius: 5px;
+            align-items: center;
+            height: fit-content;
+            @media (max-width:500px) {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    .body-viewMark  {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-around;
+        .infor-viewmark {
+            background-color: #fff;
+            
+            height: max-content;
+            border-radius: 15px;
+
+        }
+        .body-title {
+            
+            border-bottom: 1px solid rgba(149, 146, 146, 0.32);
+        }
+        .item-title {
+            border: none;
+        }
+       
+        .container-table {
+            background-color: #fff  ;
+            border-radius: 10px;
+            height: fit-content;
+            overflow: hidden;
+            .table-viewMark {
+                border-radius: 10px;
+                margin-bottom: 72px;
+                .item-hidden {
+                    @media (max-width:450px) {
+                        display: none;
+                        
+                    }
+                }
+                .row-hidden {
+                    display: none;
+                    position: relative;
+                   
+                   .item-row-hidden1 {
+                    top: 0px;
+                   width: 100vw;
+                    
+                    position: absolute;
+                    
+                   }
+                   
+
+                }
+                .row-show:hover + .row-hidden {
+                   @media (max-width:450px) {
+                    display: block;
+                   }
+                }
+            }
+
+            .pass {
+                background-color: green;
+                height: fit-content;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .fail {
+                background-color: rgb(218, 25, 11);
+                height: fit-content;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+    }
+}

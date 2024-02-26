@@ -1,0 +1,102 @@
+@import '../../../setting';
+
+.profile {
+
+    .logo-profile {
+        position: relative;
+        // width: 100%;
+        // width: 80%;
+        padding: 0;
+
+
+    }
+
+    .container-header {
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-header {
+        background-color: #fff;
+        height: 130px;
+        position: relative;
+        @media (max-width:800px) {
+            height: 210px;
+           
+        }
+        .avatar-profile {
+
+            background-color: #ccc;
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            border-radius: 50%;
+
+            top: -61px;
+            left: 88px;
+            border: 4px solid #fff;
+            @media (max-width:800px) {
+                top: -61px;
+                left: 88px;
+               
+            }
+            @media (max-width:300px) {
+                top: -61px;
+                left: 44px;
+               
+            }
+            .status-profile {
+                background-color: rgb(94, 225, 94);
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                position: absolute;
+                top: 3px;
+                right: 21px;
+                border: 2px solid #fff;
+            }
+
+        }
+
+        .title-profile {
+            position: absolute;
+            top: 10px;
+            left: 300px;
+
+            @media (max-width:800px) {
+                
+                top: 110px;
+                left: 36px;
+               
+            }
+            .role-profile {
+                background-color: #E1E7FF;
+                color: #1579FC;
+                border-radius: 5px;
+            }
+        }
+
+        .email-profile {
+            position: absolute;
+            top: 56px;
+            left: 301px;
+            @media (max-width:800px) {
+                
+                top: 172px;
+                left: 36px;
+               
+            }
+        }
+    }
+
+    .container-body {
+        background-color: #FFFEFE;
+        margin-top: 20px;
+        // padding: 20px;
+        height: fit-content;
+        border-radius: 10px;
+        overflow: hidden;
+        .title-body {
+            border-bottom: 2px solid rgba(205, 201, 201, 0.4);
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@import '../../../../setting';
+
+.progress_master {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    .chooseyear {
+        margin-top: 5px;
+        display: flex;
+        justify-content: left;
+        align-items: center ;
+    }
+    .select {
+        width: 150px;
+
+        .select-form {
+            height: 31px;
+        }
+    }
+
+    .table_div {
+
+        @media screen and (min-width: 568px) and (max-width: 880px) {
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+    
+        @media screen and (min-width: 280px) and (max-width: 567px) {
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        
+        margin-top: 30px;
+
+        .filter-icon {
+            cursor: pointer;
+        }
+
+        .content_col1 {
+            display: flex;
+            font-size: 13px;
+
+            .cardprogess {
+                height: 31px;
+                background-color: #F0FFF3;
+                padding: 2px 10px;
+
+
+                @media screen and (min-width: 280px) and (max-width: 567px) {
+                    padding: 1px 10px;
+                    height: 100%;
+
+                }
+                
+            }
+
+            .propresssubject {
+                @media screen and (min-width: 280px) and (max-width: 567px) {
+                    font-size: 14px;
+                    margin-top: 5px;
+
+                }
+            }
+
+            .progresscontent1 {
+                margin-left: 10px;
+
+                .progressdetail {
+                    color: $color_press;
+                }
+                .progresstime {
+                    color: gray;
+                    font-size: 10px;
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 1036px) and (min-width: 250px) {
+            .content_col1 {
+                display: block;
+                font-size: 12px;
+            }
+        }
+        
+    }
+   
+}
